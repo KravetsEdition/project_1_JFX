@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #696969; -fx-border-color: #000000;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane prefHeight="54.0" prefWidth="600.0" style="-fx-background-color: #808080; -fx-border-color: #000000;">
+         <children>
+            <Label layoutX="14.0" layoutY="12.0" prefHeight="28.0" prefWidth="388.0" text="Валидатор платежных карт">
+               <font>
+                  <Font name="Consolas Italic" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="S_RESIZE" />
+               </cursor>
+            </Label>
+            <Button fx:id="info_program" layoutX="413.0" layoutY="13.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="76.0" text="Info" textAlignment="CENTER">
+               <font>
+                  <Font name="Consolas Italic" size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="exit_programs" layoutX="511.0" layoutY="13.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="76.0" text="Exit" textAlignment="CENTER">
+               <font>
+                  <Font name="Consolas Italic" size="11.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="extract_message" fitHeight="190.0" fitWidth="300.0" layoutX="152.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: #0000FF;">
+         <image>
+            <Image url="@res/visa.png" />
+         </image></ImageView>
+      <Button fx:id="check_cards" alignment="CENTER" contentDisplay="TOP" layoutX="510.0" layoutY="70.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="76.0" text="Verify">
+         <font>
+            <Font name="Consolas" size="12.0" />
+         </font></Button>
+      <TextField fx:id="status_text" alignment="CENTER" editable="false" layoutX="131.0" layoutY="129.0" prefHeight="28.0" prefWidth="341.0">
+         <font>
+            <Font name="Rage Italic" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="input_field" alignment="TOP_LEFT" layoutX="14.0" layoutY="70.0" prefHeight="28.0" prefWidth="388.0" promptText="Введите код карты">
+         <font>
+            <Font name="Arial Unicode MS" size="12.0" />
+         </font>
+         <effect>
+            <Glow level="0.11" />
+         </effect>
+      </TextField>
+      <Button fx:id="clear" alignment="CENTER" contentDisplay="TOP" layoutX="414.0" layoutY="70.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="76.0" text="clear">
+         <font>
+            <Font name="Consolas" size="11.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
